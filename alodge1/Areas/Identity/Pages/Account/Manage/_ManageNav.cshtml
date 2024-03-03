@@ -1,0 +1,31 @@
+﻿@inject SignInManager<IdentityUser> SignInManager
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+<h2>Hello @UserManager.GetUserName(User)!</h2>
+
+<div class="containerlog">
+    <div class="profile-block">
+        <!-- Profile section content goes here -->
+        <ul class="nav-item">
+            <a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">
+                <i class="fas fa-user"></i> Profile
+            </a>
+        </ul>
+    </div>
+    <div class="password-block">
+        <!-- Password change section content goes here -->
+        <ul class="nav-item">
+            <a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword">
+                <i class="fas fa-lock"></i> Password
+            </a>
+        </ul>
+    </div>
+</div>
+
+

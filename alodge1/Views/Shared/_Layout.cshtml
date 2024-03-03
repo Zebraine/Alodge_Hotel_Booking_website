@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - alodge1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+@*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+*@    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+@*    <link rel="stylesheet" href="~/alodge1.styles.css" asp-append-version="true" />
+
+*@</head>
+<body>
+    <header>
+        <div class="containers">
+            <div>
+                <img src="~/images/logo2.png" style="border-radius: 35px;" alt="Hotel Logo" class="logo">
+            </div>
+            <!-- <h2 class="BOOK THE HOTEL" style="font-family: monospace;color: rgb(9, 9, 9);font-size: 35px;font-weight: bolder;">Luminary Lodge</h2>-->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="animate-charcter"> ALODGE</h3>
+                </div>
+            </div>
+        </div>
+        <div>
+        <nav>
+            
+  
+                        <ul style="padding: 5px;">
+                        <li class="nav-item"><h2>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </h2>
+                        </li>
+                        <li class="nav-item"><h2>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Room" asp-action="Index">Room</a>
+                        </h2>
+                        </li>
+                        <li class="nav-item"><h2>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Book" asp-action="Index">Book</a>
+                        </h2>
+                        </li>
+                        <li class="nav-item"><h2>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
+                        </h2>
+                        </li>
+                        
+                        <li>
+                            <h2>
+                            <partial name="_LoginPartial" />
+
+                            </h2>
+                        </li>
+                    </ul>          
+        </nav>
+  
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Welcome to ALODGE    , where exceptional hospitality meets unforgettable experiences. Discover a wide range of curated accommodations and amenities for a remarkable stay.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+               
+                    <p>Email: info@alodge.com</p>
+                    <p>Phone: +1 123 456789</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2023 ALODGE . All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false) 
+    
+</body>
+
+</html>
