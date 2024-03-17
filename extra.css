@@ -1,0 +1,33 @@
+.services {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+}
+
+.service {
+	text-align: center;
+	padding: 20px;
+	background-color: #f2f2f2;
+}
+
+.service img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.service h2 {
+	margin-bottom: 10px;
+}
+
+.service p {
+	margin-bottom: 20px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotel Booking System</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles2.css">
+</head>
+<body>
+	<header>
+		<div class="containers">
+			<div>
+			<img src="images/logo2.png" style="background-color: white;border-radius: 35px;" alt="Hotel Logo" class="logo">
+		   </div>
+            <!-- <h2 class="BOOK THE HOTEL" style="font-family: monospace;color: rgb(9, 9, 9);font-size: 35px;font-weight: bolder;">Luminary Lodge</h2>-->
+			<div class="row">
+				  <div class="col-md-12 text-center">
+					<h3 class="animate-charcter"> ALODGE</h3>
+				  </div>
+			</div>
+		</div>
+		<div>
+			<nav style="background-color: rgb(180, 214, 186);padding: 1px;opacity: .8;border-radius: 20px;">
+				<ul style="padding: 5px;">
+					<li><h2 ><a style="margin-right: 250px;margin-left: 50px;font-family: monospace;" href="index.html">Home</a></h2></li>
+					<li><h2 ><a style="margin-right: 250px;font-family: monospace" href="rooms.html">Rooms</a></h2></li>
+                    <li><h2 ><a style="margin-right: 250px;font-family: monospace" href="book.html">Book</a></h2></li>
+					<li><h2 ><a style="margin-right: 250px;font-family: monospace" href="contact.html">Contact</a></h2></li>
+                    <li><h2 ><a style="margin-right: 250px;font-family: monospace" href="login.html">login</a></h2></li>
+                </ul>
+			</nav>
+		</div>
+		
+	</header>
+
+	<main>
+		<section class="containers">
+			<div class="container"><br><br>
+				<h2>Book Your Stay</h2><br>
+				<form action="#" method="post">
+					<div class="form-group">
+						<label for="check-in">Check-In Date</label>
+						<input type="date" id="check-in" name="check-in" required>
+					</div>
+					<div class="form-group">
+						<label for="check-out">Check-Out Date</label>
+						<input type="date" id="check-out" name="check-out" required>
+					</div>
+					<div class="form-group">
+						<label for="room-type">Room Type</label>
+						<select id="room-type" name="room-type" required>
+							<option value="">-- Please select a room type --</option>
+							<option value="standard">Standard Room</option>
+							<option value="deluxe">Deluxe Room</option>
+							<option value="suite">Suite</option>
+							<option value="hollywood_twin">Hollywood Twin Room</option>
+							<option value="cabana">Cabana Room</option>
+							<option value="studio">Studio Room</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="adults">Adults</label>
+						<input type="number" id="adults" name="adults" min="1" max="4" required>
+					</div>
+					<div class="form-group">
+						<label for="children">Children</label>
+						<input type="number" id="children" name="children" min="0" max="4" required>
+					</div>
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="phone">Phone Number</label>
+						<input type="tel" id="phone" name="phone" required>
+					</div>
+					<div class="form-group">
+						<label for="comments">Comments</label>
+						<textarea id="comments" name="comments"></textarea>
+					</div>
+					<button type="submit" class="btn">Book Now</button>
+				</form>
+			</div>
+			<div>						
+				<img src="images/bkash.png" alt="Room 4" class="room-image" height="50" weight="100" style="margin: 20px;border-radius: 10px;"><br>
+				<img src="images/book.jpg" alt="Room 4" class="room-image"  height="500" weight="700" style="margin: 0px;border-radius: 5px;">
+
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 Hotel Booking System. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>
